@@ -7,3 +7,131 @@ Author URI: https://motaphoto.com
 Version: 1.0
 Tags: responsive, custom-header, custom-background, threaded-comments, translation-ready
 */
+
+
+
+/* Importer les polices locales */
+@font-face {
+    font-family: 'Space Mono';
+    src: url('<?php echo get_template_directory_uri(); ?>/fonts/SpaceMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('<?php echo get_template_directory_uri(); ?>/fonts/SpaceMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('<?php echo get_template_directory_uri(); ?>/fonts/SpaceMono-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('<?php echo get_template_directory_uri(); ?>/fonts/SpaceMono-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+*{
+    font-family: 'Space Mono', monospace;
+}
+    /* section nav ******************************************************************************************* */
+/* Positionnement du logo à gauche avec les dimensions spécifiées */
+.logo {
+    float: left;
+    width: 344px; /* Largeur spécifiée */
+    height: 21px; /* Hauteur spécifiée */
+}
+
+/* Style pour la barre de navigation principale */
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 112px 40px 38px;
+    text-transform: uppercase;
+}
+
+/* Style pour la zone du menu */
+.menu-container {
+    flex: 1; /* Le menu occupe tout l'espace restant */
+}
+
+/* Style pour le menu principal */
+.primary-menu {
+    list-style-type: none; /* Supprime les puces */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alignement des éléments à droite */
+}
+
+.primary-menu li {
+    margin-left: 20px; /* Espacement entre les éléments du menu */
+}
+
+.primary-menu li a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #000; /* Couleur du texte */
+    font-size: 14px; /* Taille de la police */
+    font-weight: 400;
+}
+
+.primary-menu li a:hover {
+    color: #000; /* Couleur du texte au survol */
+    font-weight: 700;
+}
+
+/* Style pour le bouton "Contact" */
+.modal-open-btn {
+    background-color: transparent; /* Fond transparent */
+    border: none; /* Supprime la bordure */
+    cursor: pointer;
+    text-decoration: none; /* Supprime le soulignement */
+    color: #000; /* Couleur du texte */
+    margin-left: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.modal-open-btn:hover {
+    color: #000; /* Couleur du texte au survol */
+    font-weight: 700;
+}
+/* fin section nav******************************************************************************************/
+ /* Style CSS pour le footer */
+ footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: solid;
+    text-transform: uppercase;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legal-links {
+    margin-right: 20px;
+}
+
+.legal-links a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+ /*Fin du Style CSS pour le footer ***************************************************************************/
